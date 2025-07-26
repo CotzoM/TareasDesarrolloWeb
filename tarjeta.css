@@ -1,0 +1,23 @@
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tarjeta {
+  background-color: rgb(171, 245, 226);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(169, 155, 250, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.tarjeta img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}

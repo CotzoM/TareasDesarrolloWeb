@@ -1,0 +1,41 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+  background-image: url('https://via.placeholder.com/1200x400'); /* Puedes cambiar el enlace por otro */
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+body.oscuro {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  background-image: none;
+}
+
+.container {
+  margin-top: 100px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

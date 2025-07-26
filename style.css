@@ -1,0 +1,16 @@
+body {
+  background: #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+body.oscuro {
+  background: #4e1e1e;
+  color: #f0f0f0;
+}
+
+.container {
+  margin-top: 100px;
+}
