@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6a1b9a; /* Morado oscuro */
+    padding-top: 20px;
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    scrollbar-width: thick;
+    scrollbar-color: #ba68c8 #f3e5f5; /* Pulgar lila, pista rosada */
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 16px; /* Más gruesa */
+    background: #f3e5f5;
+    border-radius: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ba68c8 0%, #f3e5f5 50%, #ba68c8 100%);
+    border-radius: 8px;
+    border: 3px solid #f3e5f5;
+}
+.sidebar::-webkit-scrollbar-track {
+    background: #f3e5f5;
+    border-radius: 8px;
+}
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 10px 0;
+}
+.sidebar ul li a {
+    color: #f3e5f5; /* Lila claro */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.sidebar ul li a:hover {
+    background-color: #8e24aa; /* Morado medio */
+}
+
+.content {
+    margin-left: 270px;
+    padding: 40px 32px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(106, 27, 154, 0.12);
+    min-height: 90vh;
+    max-width: 900px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(186, 104, 200); /* Rosa/morado suave */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.content p, .content ul {
+    font-size: 1.15rem;
+    color: #4a148c; /* Texto morado oscuro */
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+.content ul {
+    background: #f3e5f5;
+    border-radius: 12px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 8px rgba(106, 27, 154, 0.06);
+}
+.decorative-img {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    width: 180px;
+    opacity: 0.18;
+    border-radius: 16px;
+    pointer-events: none;
+}
