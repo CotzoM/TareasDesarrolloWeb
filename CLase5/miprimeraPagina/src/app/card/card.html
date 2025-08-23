@@ -1,0 +1,25 @@
+<mat-grid-list cols="3" rowHeight="1:1" gutterSize="16px">
+  <mat-grid-tile *ngFor="let card of cards">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ card.title }}</mat-card-title>
+        <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <!-- Imagen -->
+      <img mat-card-image [src]="card.image" alt="Card image">
+
+      <!-- Botones debajo de la imagen -->
+      <mat-card-actions align="start">
+        <button mat-raised-button color="primary">Comprar</button>
+        <button mat-raised-button color="accent">Detalles</button>
+      </mat-card-actions>
+
+      <!-- Texto -->
+      <mat-card-content>
+        <p>{{ card.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
